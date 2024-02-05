@@ -33,10 +33,8 @@ const cart = [
     }
 ]
 
-//CODE HERE
-
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
-
+const summedPrice = cart.reduce((sum, food) => sum + food.price, 0);
+console.log(summedPrice)
 
 //////////////////PROBLEM 2////////////////////
 /*  
@@ -53,9 +51,14 @@ const cart = [
     decimals, for example: .06 for a 6% tax.
 */
 
-//CODE HERE
+const calcFinalPrice = (cartTotal, couponValue, tax) => cartTotal + (cartTotal * tax) - couponValue;
 
+const cartTotal = 26.97;
+const couponValue = 10
+const tax = 0.06; 
 
+const finalPrice = calcFinalPrice(cartTotal, couponValue, tax);
+console.log(finalPrice);
 
 //////////////////PROBLEM 3////////////////////
 /*  
@@ -78,7 +81,17 @@ const cart = [
 */
 
 /*
-    TEXT ANSWER HERE
+//Name: To store the customer's first and last name and make sure the order is with the correct name.
+//Data Type: String to represents textual data.
+
+//Email: To store the customer's email address for communication and order.
+//Data Type: String to represents textual data.
+
+//Phone Number: To store the customer's phone number for order confirmation and delivery coordination if needed.
+//Data Type: String, as it represents numerical data. It's important to note that there may be some special characters.
+
+//Address: To store the customer's delivery address, which includes street, city, state, and zip code.
+//Data Type: Object, with sub-properties like street, city, state, and zipCode, where each sub-property is a string.
 
 */
 
@@ -87,4 +100,14 @@ const cart = [
     guidelines.
 */
 
-//CODE HERE
+const customer = {
+    name: 'Viv Rose',
+    email: 'vivrose@gmail.com',
+    phoneNumber: '1234567890',
+    address: {
+        street: '123 Fake Dr.',
+        city: 'Murray',
+        state: 'Utah',
+        zipCode: '84123'
+    }
+};
