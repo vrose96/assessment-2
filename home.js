@@ -52,7 +52,7 @@ const canWeDeliver = (zipCode) => {
     } else {
         console.log("Sorry, we can't deliver to that address");
     }
-};
+}
 
 const zipCodeCheck = 85204;
 canWeDeliver(zipCodeCheck);
@@ -85,10 +85,10 @@ const canWeDeliverTwo = (zipCode) => {
         }
     }
     console.log("Sorry, we can't deliver to that address");
-};
+}
     
 const zipCodeCheck2 = 84009;
-canWeDeliverTwo(zipCodeCheck2);
+canWeDeliverTwo(zipCodeCheck2)
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -139,4 +139,4 @@ deals[0].title = deals[0].title.replace('15', '10');
 */
 
 deals[1].desc = deals[1].desc.replace('March', 'April').trim();
-console.log(deals);
+console.log(deals)
