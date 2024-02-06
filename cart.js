@@ -58,7 +58,7 @@ const couponValue = 10
 const tax = 0.06; 
 
 const finalPrice = calcFinalPrice(cartTotal, couponValue, tax);
-console.log(finalPrice);
+console.log(finalPrice)
 
 //////////////////PROBLEM 3////////////////////
 /*  
@@ -110,4 +110,4 @@ const customer = {
         state: 'Utah',
         zipCode: '84123'
     }
-};
+}
